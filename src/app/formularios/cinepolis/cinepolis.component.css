@@ -1,0 +1,36 @@
+form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+}
+.der{
+    width: 45%;
+    padding: 15px 25px;
+}
+.der label{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.der label label{
+    display: block;
+    width: auto;
+}
+.izq{
+    width: 45%;
+    padding: 15px 25px;
+}
+.acciones{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

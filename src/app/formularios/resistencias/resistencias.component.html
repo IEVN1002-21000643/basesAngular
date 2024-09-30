@@ -1,0 +1,87 @@
+<div class="FormRest">
+    <form [formGroup]="formulario">
+        <div class="banda">
+            <div class="bandaM">
+                <p class="title">Primera Banda</p>
+                <label for="color1">Color 1
+                    <select formControlName="color1">
+                        <option value="0">Negro</option>
+                        <option value="1">Cáfe</option>
+                        <option value="2">Rojo</option>
+                        <option value="3">Naranja</option>
+                        <option value="4">Amarillo</option>
+                        <option value="5">Verde</option>
+                        <option value="6">Azul</option>
+                        <option value="7">Violeta</option>
+                        <option value="8">Gris</option>
+                        <option value="9">Blanco</option>
+                    </select>
+                </label>
+            </div>
+            <div class="bandaM">
+                <p class="title">Segunda Banda</p>
+                <label for="color2">Color 2
+                    <select formControlName="color2">
+                        <option value="0">Negro</option>
+                        <option value="1">Cáfe</option>
+                        <option value="2">Rojo</option>
+                        <option value="3">Naranja</option>
+                        <option value="4">Amarillo</option>
+                        <option value="5">Verde</option>
+                        <option value="6">Azul</option>
+                        <option value="7">Violeta</option>
+                        <option value="8">Gris</option>
+                        <option value="9">Blanco</option>
+                    </select>
+                </label>
+            </div>
+            <div class="bandaM">
+                <p class="title">Tercera Banda</p>
+                <label for="color3">Color 3
+                    <select formControlName="color3">
+                        <option value="1">Negro</option>
+                        <option value="10">Cáfe</option>
+                        <option value="100">Rojo</option>
+                        <option value="1000">Naranja</option>
+                        <option value="10000">Amarillo</option>
+                        <option value="100000">Verde</option>
+                        <option value="1000000">Azul</option>
+                        <option value="10000000">Violeta</option>
+                        <option value="100000000">Gris</option>
+                        <option value="1000000000">Blanco</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="tolerancia">
+            <p class="title">Tolerancia</p>
+            <label for="tolerancia"><input type="radio" value="0" formControlName="tolerancia"> Oro</label>
+            <label for="tolerancia"><input type="radio" value="1" formControlName="tolerancia"> Plata</label>
+        </div>
+        <button (click)="registrar()" type="button">Registrar</button>
+    </form>
+    <table class="tablaTolerancia">
+        <thead>
+            <tr>
+                <td>Color 1</td>
+                <td>Color 2</td>
+                <td>Color 3</td>
+                <td>Color Tolerancia</td>
+                <td>Valor</td>
+                <td>Valor máximo</td>
+                <td>Valor mínimo</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td [bgColor]="bg1" [style.color]="c1">{{color1}}</td>
+                <td [bgColor]="bg2" [style.color]="c2">{{color2}}</td>
+                <td [bgColor]="bg3" [style.color]="c3">{{color3}}</td>
+                <td [bgColor]="bgt" [style.color]="ct">{{colorT}}</td>
+                <td>{{valor}}</td>
+                <td>{{max}}</td>
+                <td>{{min}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

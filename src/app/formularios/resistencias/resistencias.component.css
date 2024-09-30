@@ -1,0 +1,30 @@
+.banda{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.bandaM{
+    display: flex;
+    width: 33.33%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bandaM .title{
+    width: 100%;
+    text-align: center;
+}
+.tolerancia{
+    display: flex;
+    width: 33.33%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tolerancia label{
+    width: 100%;
+}
+td{
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid black;
+}

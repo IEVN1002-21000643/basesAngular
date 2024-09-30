@@ -1,0 +1,25 @@
+<div class="titulo">
+    <h1>Cinepolis</h1>
+</div>
+<form [formGroup]="formulario">
+    <div class="der">
+        <h4 class="subtitulo">Entradas</h4>
+        <label for="nombre">Nombre<input type="text" formControlName="nombre"></label>
+        <label for="compradores">Cantidad de compradores <input type="number" formControlName="compradores"></label>
+        <label for="cineco">Tarjeta Cineco <label for="cineco"><input type="radio" formControlName="cineco" value="0">Si</label><label for="cineco"><input type="radio" formControlName="cineco" value="1">No</label></label>
+        <label for="boletos">Cantidad de boletos <input type="number" formControlName="boletos"></label>
+    </div>
+    <div class="izq">
+        <h4 class="subtitulo">Salidas</h4>
+        <label for="pago">Valor a pagar<input type="text" name="pago" value="{{subtotal}}" disabled></label>
+        <div class="salidas">{{resultado}}</div>
+        <div> {{advertencia}} </div>
+    </div>
+    <div class="acciones">
+        <h4>Acciones</h4>
+        <div class="botones">
+            <input type="submit" value="Procesar" (click)="procesar()">
+            <input type="button" value="Salir">
+        </div>
+    </div>
+</form>
